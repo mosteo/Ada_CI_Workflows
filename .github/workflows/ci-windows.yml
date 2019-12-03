@@ -3,18 +3,18 @@ name: CI Windows
 # EDIT THE TWO VALUES IN env: 
 
 env:
-  - project_file: demo.gpr
-  - test_program: bin/selftest
+  project_file: demo.gpr
+  test_program: bin/selftest
 
 on:
-  - push:
-      paths-ignore:
-        - 'doc/**'
-        - '*.md'
-  - pull_request:
-      paths-ignore:
-        - 'doc/**'
-        - '*.md'
+  push:
+    paths-ignore:
+      - 'doc/**'
+      - '*.md'
+  pull_request:
+    paths-ignore:
+      - 'doc/**'
+      - '*.md'
 
 jobs:
 
