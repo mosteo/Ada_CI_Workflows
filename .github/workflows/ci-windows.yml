@@ -40,5 +40,5 @@ jobs:
       shell: bash
 
     - name: Test
-      run: "{{ env.test_program }}"
+      run: ${{ env.test_program }}
       shell: bash
