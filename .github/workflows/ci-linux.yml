@@ -45,7 +45,7 @@ jobs:
       run: >
         docker run -v${PWD}:/work -w /work
         -e "BRANCH=${{ github.base_ref }}"
-        alire/gnat:${{ matrix.tag }} gprbuild -j0 -P ${{ env.project_file }}
+        alire/gnat:${{ matrix.tag }} gprbuild -j0 -p -P ${{ env.project_file }}
 
     - name: Run test program
       run: >
